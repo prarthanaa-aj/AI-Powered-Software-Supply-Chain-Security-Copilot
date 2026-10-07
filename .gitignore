@@ -1,0 +1,17 @@
+﻿.env
+src/.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/secrets.toml
+logs/
+*.log
+evaluation/results/*
+!evaluation/results/.gitkeep
+models/risk_model/*.json
+models/risk_model/*.joblib
+data/raw/*
+data/processed/*
+.ipynb_checkpoints/

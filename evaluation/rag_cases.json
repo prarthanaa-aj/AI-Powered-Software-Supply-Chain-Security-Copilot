@@ -1,0 +1,15 @@
+﻿[
+  {"id":"RAGQ01","answerable":true,"query":"verify the exact installed package version and affected release interval","required_terms":["exact installed version","affected version range"]},
+  {"id":"RAGQ02","answerable":true,"query":"no records from a successful lookup do not prove the package is safe","required_terms":["no matching records","does not prove the package is safe"]},
+  {"id":"RAGQ03","answerable":true,"query":"review exploit evidence and whether vulnerable code is reachable","required_terms":["exploit evidence","reachable use"]},
+  {"id":"RAGQ04","answerable":true,"query":"check compatibility release notes and validation tests before changing version","required_terms":["compatibility","release notes"]},
+  {"id":"RAGQ05","answerable":true,"query":"never disclose secrets or repository files to the language model","required_terms":["API credentials","source code"]},
+  {"id":"RAGQ06","answerable":true,"query":"record the full dependency path from project to transitive package","required_terms":["full dependency path","transitive dependency"]},
+  {"id":"RAGQ07","answerable":true,"query":"how should advisory identifier and publication date be confirmed","required_terms":["identifier","publication or modification date"]},
+  {"id":"RAGQ08","answerable":true,"query":"when is dependency remediation approved and who makes the final call","required_terms":["analyst or project owner","remediation decision"]},
+  {"id":"RAGQ09","answerable":true,"query":"what should a successful empty source query mean versus a timeout","required_terms":["no matching records","incomplete lookup"]},
+  {"id":"RAGQ10","answerable":false,"query":"What is the capital of France?","required_terms":[]},
+  {"id":"RAGQ11","answerable":false,"query":"Explain astrophysics and Jupiter's moons","required_terms":[]},
+  {"id":"RAGQ12","answerable":false,"query":"Give me a recipe for chocolate cake","required_terms":[]}
+]
+

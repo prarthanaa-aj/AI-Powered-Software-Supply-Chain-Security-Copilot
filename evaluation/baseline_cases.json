@@ -1,0 +1,5 @@
+﻿[
+  {"id":"B001","question":"Analyze my dependencies","expected":"fixed dependency-analysis response"},
+  {"id":"B002","question":"Which CVEs affect this package?","expected":"cannot retrieve current vulnerability evidence"},
+  {"id":"B003","question":"Explain the dependency risk in context","expected":"fixed keyword-based response"}
+]

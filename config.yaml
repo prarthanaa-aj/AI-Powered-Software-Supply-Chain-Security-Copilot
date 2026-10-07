@@ -1,0 +1,22 @@
+﻿project:
+  name: AI-Powered Software Supply-Chain Security Operations Copilot
+  version: 0.2.0
+llm:
+  provider: vocareum
+  model: gpt-4o-mini
+  max_output_tokens: 1000
+  timeout_seconds: 30
+agent:
+  max_steps: 8
+  max_tool_calls: 6
+rag:
+  top_k: 5
+  minimum_similarity: 0.05
+risk:
+  model_mode: heuristic
+safety:
+  allow_code_modification: false
+  allow_dependency_modification: false
+  allow_deployment: false
+  allow_arbitrary_commands: false
+  human_approval_required: true

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 940" role="img" aria-labelledby="title desc">
+  <title id="title">Project Genome system architecture</title>
+  <desc id="desc">Supported project files are parsed and analyzed locally. Manifest, static import, vulnerability and RAG evidence flow into contextual risk and the LangChain explanation agent. The analyst reviews a report and may run a non-mutating hypothetical-version lookup.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#7892b4"/></marker>
+    <style>
+      .bg{fill:#0b1220}.box{fill:#142238;stroke:#6682a8;stroke-width:2;rx:14}
+      .title{font:700 20px sans-serif;fill:#eef4fc}.sub{font:14px sans-serif;fill:#b5c4d8}
+      .edge{stroke:#7892b4;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+      .muted{font:13px sans-serif;fill:#96a9c4}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="940" rx="20"/>
+  <text x="600" y="42" text-anchor="middle" class="title">PROJECT GENOME · Evidence-Bounded Architecture</text>
+
+  <rect class="box" x="80" y="75" width="1040" height="110"/>
+  <text class="title" x="600" y="108" text-anchor="middle">Analyst Input</text>
+  <text class="sub" x="600" y="137" text-anchor="middle">requirements*.txt · Python .py source · question · optional hypothetical version</text>
+  <text class="muted" x="600" y="162" text-anchor="middle">Unsupported formats reported; Python source is parsed locally and never executed</text>
+
+  <path class="edge" d="M600 185 V220"/>
+  <rect class="box" x="80" y="220" width="1040" height="135"/>
+  <text class="title" x="600" y="254" text-anchor="middle">Project Analyzer</text>
+  <text class="sub" x="600" y="283" text-anchor="middle">Pinned dependency inventory · AST import mapping · unpinned/conflicting declarations · unknowns</text>
+  <text class="sub" x="600" y="312" text-anchor="middle">Evidence graph: manifest declarations + static imports + returned advisory links</text>
+  <text class="muted" x="600" y="338" text-anchor="middle">No inferred transitive edges, runtime reachability, deployment context, or exploitability</text>
+
+  <path class="edge" d="M600 355 V390"/>
+  <rect class="box" x="80" y="390" width="500" height="125"/>
+  <text class="title" x="330" y="425" text-anchor="middle">Evidence Tools</text>
+  <text class="sub" x="330" y="455" text-anchor="middle">OSV exact-version lookup · dependency summary</text>
+  <text class="sub" x="330" y="484" text-anchor="middle">Bounded calls · failure status · provenance</text>
+
+  <rect class="box" x="620" y="390" width="500" height="125"/>
+  <text class="title" x="870" y="425" text-anchor="middle">Local Security Guidance</text>
+  <text class="sub" x="870" y="455" text-anchor="middle">Chunked curated corpus · sparse concept vectors</text>
+  <text class="sub" x="870" y="484" text-anchor="middle">Guidance only; never project vulnerability evidence</text>
+
+  <path class="edge" d="M330 515 C330 555 460 555 460 580"/>
+  <path class="edge" d="M870 515 C870 555 740 555 740 580"/>
+  <rect class="box" x="80" y="580" width="1040" height="125"/>
+  <text class="title" x="600" y="615" text-anchor="middle">Contextual Risk + LangChain Agent</text>
+  <text class="sub" x="600" y="645" text-anchor="middle">Observed risk dimensions · unknowns · evidence coverage · bounded tool-calling synthesis</text>
+  <text class="muted" x="600" y="675" text-anchor="middle">Heuristic score, not validated ML; missing vulnerability evidence stays unknown</text>
+
+  <path class="edge" d="M600 705 V740"/>
+  <rect class="box" x="80" y="740" width="1040" height="100"/>
+  <text class="title" x="600" y="775" text-anchor="middle">Project Genome Analyst Views</text>
+  <text class="sub" x="600" y="807" text-anchor="middle">Overview · Map · Signals · Paths · Evidence · Human Review</text>
+
+  <path class="edge" d="M350 840 V880 H220 V895"/>
+  <path class="edge" d="M850 840 V880 H980 V895"/>
+  <text class="sub" x="220" y="922" text-anchor="middle">What-if: exact hypothetical OSV lookup; no file changes</text>
+  <text class="sub" x="980" y="922" text-anchor="middle">Session analyst context + answer-style feedback</text>
+</svg>
